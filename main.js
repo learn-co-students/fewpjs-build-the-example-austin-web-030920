@@ -4,10 +4,9 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 const errorDiv = document.getElementById("modal")
-
+hideErrors();
 document.addEventListener('DOMContentLoaded', () => {
-  hideErrors();
-
+  
   document.body.addEventListener("click", (event) => {
     if (event.target.className == "activated-heart") {
       mimicServerCall()
